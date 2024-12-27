@@ -16,7 +16,7 @@ def file_system_storage(url):
     return {
         "BACKEND": "django.core.files.storage.FileSystemStorage",
         "OPTIONS": {
-            "location": parsed_url.path,
+            "location": "".join((parsed_url.netloc, parsed_url.path)),
         },
     }
 
