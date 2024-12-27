@@ -7,7 +7,7 @@ build-backend = "poetry.core.masonry.api"
 [tool.poetry]
 name = "dj-storage-url"
 description = "Configure Django storage from a URL"
-version = "0.0.2"
+version = "0.0.3"
 keywords = ["dj-storage-url"]
 license = "LICENSE"
 readme = "README.md"
