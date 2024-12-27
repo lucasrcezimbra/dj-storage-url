@@ -48,7 +48,7 @@ pytest-mock = "3.14.0"
 
 [tool.poetry.group.docs.dependencies]
 myst-parser = "2.0.0"
-Sphinx = "7.2.6"
+Sphinx = "7.4.7"
 sphinx-rtd-theme = "2.0.0"
 
 
