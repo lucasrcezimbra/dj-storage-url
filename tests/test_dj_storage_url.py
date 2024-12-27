@@ -79,3 +79,10 @@ class TestCustomStorage:
             "BACKEND": "myproject.myapp.MyCustomStorage",
             "OPTIONS": {},
         }
+
+    @pytest.mark.skip(reason="TODO")
+    def test_with_options(self):
+        assert parse("myproject.myapp.MyCustomStorage://?foo=bar") == {
+            "BACKEND": "myproject.myapp.MyCustomStorage",
+            "OPTIONS": {"foo": "bar"},
+        }
