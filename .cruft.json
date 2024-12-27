@@ -1,0 +1,24 @@
+{
+  "checkout": null,
+  "commit": "172076c8feb8a97cb9650a09a0a8fb36e3d539ae",
+  "context": {
+    "cookiecutter": {
+      "_commit": "b74d70cbb77c4be711209995b754104b8f2e2b29",
+      "_template": "https://github.com/lucasrcezimbra/cookiecutter-pypackage",
+      "command_line_interface": "No command-line interface",
+      "coverage": "Codecov",
+      "email": "lucas@cezimbra.tec.br",
+      "full_name": "Lucas Rangel Cezimbra",
+      "github_username": "lucasrcezimbra",
+      "namespace": "dj_storage_url",
+      "open_source_license": "GNU Lesser General Public License v2.1",
+      "project_name": "dj-storage-url",
+      "project_short_description": "Configure Django storage from a URL",
+      "project_slug": "dj-storage-url",
+      "pypi_username": "Lrcezimbra",
+      "version": "0.0.1"
+    }
+  },
+  "directory": null,
+  "template": "https://github.com/lucasrcezimbra/cookiecutter-pypackage"
+}
