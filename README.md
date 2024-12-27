@@ -34,7 +34,6 @@ Contributions are welcome, feel free to open an Issue or Pull Request.
 ```
 git clone https://github.com/lucasrcezimbra/dj-storage-url
 cd dj-storage-url
-poetry install
-pre-commit install
-poetry run pytest
+make install
+make test
 ```
