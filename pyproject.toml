@@ -38,7 +38,7 @@ classifiers = [
 python = ">=3.9"
 
 [tool.poetry.group.dev.dependencies]
-build = "1.2.1"
+build = "1.2.2.post1"
 bump2version = "1.0.1"
 coverage = "7.4.4"
 faker = "24.8.0"
