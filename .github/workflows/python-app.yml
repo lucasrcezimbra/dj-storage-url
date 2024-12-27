@@ -14,12 +14,9 @@ jobs:
         with:
           python-version: '3.x'
           cache: 'poetry'
-      - name: Install dependencies
-        run: |
-          poetry install
-          poetry run pre-commit install
-      - run: poetry run pre-commit run -a
-      - run: poetry run pytest --cov=dj_storage_url
+      - run: make install
+      - run: make lint
+      - run: make test-cov
       - uses: codecov/codecov-action@v4.0.1
         with:
           token: ${{ secrets.CODECOV_TOKEN }}

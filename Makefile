@@ -1,0 +1,17 @@
+.PHONY: build lint run test test-cov
+
+build:
+	poetry run python -m build
+
+install:
+	poetry install
+	poetry run pre-commit install
+
+lint:
+	poetry run pre-commit run -a
+
+test:
+	poetry run pytest
+
+test-cov:
+	 poetry run pytest --cov=dj_storage_url
