@@ -40,7 +40,7 @@ python = ">=3.9"
 [tool.poetry.group.dev.dependencies]
 build = "1.2.2.post1"
 coverage = "7.6.10"
-faker = "35.1.0"
+faker = "35.2.0"
 pre-commit = "4.1.0"
 pytest = "8.3.4"
 pytest-cov = "6.0.0"
