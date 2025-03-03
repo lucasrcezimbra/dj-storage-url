@@ -42,7 +42,7 @@ build = "1.2.2.post1"
 coverage = "7.6.12"
 faker = "36.1.1"
 pre-commit = "4.1.0"
-pytest = "8.3.4"
+pytest = "8.3.5"
 pytest-cov = "6.0.0"
 pytest-mock = "3.14.0"
 
