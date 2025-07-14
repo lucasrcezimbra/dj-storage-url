@@ -122,34 +122,6 @@ When asking Copilot for help, provide this context:
 - "Use existing helper functions like `strtobool` for boolean conversion"
 - "Follow the existing pattern in `SCHEME_TO_CONFIG` mapping"
 
-## Configuration Recommendations
-
-### VS Code Settings
-If using VS Code with Copilot, consider these workspace settings:
-
-```json
-{
-    "python.defaultInterpreterPath": ".venv/bin/python",
-    "python.linting.enabled": true,
-    "python.linting.ruffEnabled": true,
-    "python.formatting.provider": "black",
-    "python.formatting.blackArgs": ["--line-length", "88"],
-    "editor.formatOnSave": true,
-    "editor.codeActionsOnSave": {
-        "source.organizeImports": true
-    }
-}
-```
-
-### Copilot Chat Usage
-
-When using Copilot Chat:
-
-1. **Reference existing patterns**: "Following the pattern of `file_system_storage`, create a parser for..."
-2. **Specify test requirements**: "Write tests similar to `TestFileSystemStorage` but for..."
-3. **Ask for documentation**: "Add docstrings following the project's documentation style"
-4. **Request refactoring**: "Refactor this function to match the project's code style"
-
 ## Contributing Guidelines
 
 ### Pull Request Checklist
