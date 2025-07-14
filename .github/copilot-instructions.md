@@ -84,28 +84,6 @@ class TestStorageType:
 
 ## Copilot-Specific Prompts and Guidelines
 
-### Effective Prompts for This Repository
-
-When working with Copilot in this repository, use these types of prompts:
-
-1. **For new storage backends**:
-   ```
-   # Create a new storage backend parser for [service] that accepts URL format [scheme]://[details]
-   # Should return Django storage configuration with BACKEND and OPTIONS
-   ```
-
-2. **For URL parsing**:
-   ```
-   # Parse URL components for [storage_type] storage configuration
-   # Extract [specific_parameters] from query string and path
-   ```
-
-3. **For test creation**:
-   ```
-   # Write pytest test for [function_name] that validates [specific_behavior]
-   # Include edge cases for invalid URLs and missing parameters
-   ```
-
 ### Code Generation Guidelines
 
 When using Copilot to generate code:
