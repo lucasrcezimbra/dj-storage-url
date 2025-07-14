@@ -18,7 +18,7 @@ This document provides Copilot-specific guidelines and best practices for contri
 
 ### Code Quality Guidelines
 - Write clear, descriptive function and variable names
-- Use type hints for function signatures
+- Avoid type hints
 - Add docstrings for public functions and classes
 - Follow PEP 8 conventions (enforced by Ruff and Black)
 - Keep functions small and focused on a single responsibility
