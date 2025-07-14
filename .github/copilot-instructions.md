@@ -74,10 +74,10 @@ class TestStorageType:
     def test_basic_functionality(self):
         # Arrange
         url = "scheme://example"
-        
+
         # Act
         result = parse(url)
-        
+
         # Assert
         assert result == expected_output
 ```
@@ -125,10 +125,10 @@ When using Copilot to generate code:
    def new_storage_parser(url):
        """
        Parse [storage_type] storage URL into Django configuration.
-       
+
        Args:
            url (str): Storage URL in format scheme://...
-           
+
        Returns:
            dict: Django storage configuration with BACKEND and OPTIONS
        """
