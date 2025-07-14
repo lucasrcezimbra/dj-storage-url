@@ -84,34 +84,6 @@ class TestStorageType:
 
 ## Copilot-Specific Prompts and Guidelines
 
-### Code Generation Guidelines
-
-When using Copilot to generate code:
-
-1. **Function Structure**: Follow the existing pattern of URL parsing functions:
-   - Take a URL string as input
-   - Parse components using `urlparse` or `urlsplit`
-   - Return a dictionary with `BACKEND` and `OPTIONS` keys
-
-2. **Error Handling**: Include appropriate error handling for:
-   - Invalid URL formats
-   - Missing required parameters
-   - Invalid boolean values (use the `strtobool` helper)
-
-3. **Documentation**: Generate code with appropriate docstrings:
-   ```python
-   def new_storage_parser(url):
-       """
-       Parse [storage_type] storage URL into Django configuration.
-
-       Args:
-           url (str): Storage URL in format scheme://...
-
-       Returns:
-           dict: Django storage configuration with BACKEND and OPTIONS
-       """
-   ```
-
 ### Repository-Specific Context
 
 When asking Copilot for help, provide this context:
