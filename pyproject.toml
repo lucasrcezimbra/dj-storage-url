@@ -44,7 +44,7 @@ faker = "37.8.0"
 pre-commit = "4.3.0"
 pytest = "8.4.2"
 pytest-cov = "7.0.0"
-pytest-mock = "3.15.0"
+pytest-mock = "3.15.1"
 
 [tool.poetry.group.docs.dependencies]
 myst-parser = "2.0.0"
