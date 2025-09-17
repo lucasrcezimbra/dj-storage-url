@@ -24,7 +24,6 @@ class TestFileSystemStorage:
         parsed = parse("file://tmp/media")
         assert parsed["OPTIONS"]["location"] == "tmp/media"
 
-    @pytest.mark.skip(reason="TODO")
     def test_with_optional_options(self):
         url = "file:///tmp/files?base_url=/my/base/url&file_permissions_mode=0o644&directory_permissions_mode=0o644"
         assert parse(url) == {
@@ -84,7 +83,6 @@ class TestCustomStorage:
             "OPTIONS": {},
         }
 
-    @pytest.mark.skip(reason="TODO")
     def test_with_options(self):
         assert parse("myproject.myapp.MyCustomStorage://?foo=bar") == {
             "BACKEND": "myproject.myapp.MyCustomStorage",
