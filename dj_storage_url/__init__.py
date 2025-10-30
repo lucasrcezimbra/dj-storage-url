@@ -22,7 +22,7 @@ def file_system_storage(url):
 
 
 def memory_storage(_):
-    return {"BACKEND": "django.core.files.storage.MemoryStorage", "OPTIONS": {}}
+    return {"BACKEND": "django.core.files.storage.InMemoryStorage", "OPTIONS": {}}
 
 
 def s3_storage(url):
