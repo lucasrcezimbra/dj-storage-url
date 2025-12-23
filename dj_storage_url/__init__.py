@@ -13,11 +13,22 @@ def strtobool(value):
 
 def file_system_storage(url):
     parsed_url = urlparse(url)
+    querystring = parse_qs(parsed_url.query)
+    options = {
+        "location": "".join((parsed_url.netloc, parsed_url.path)),
+    }
+    
+    # Handle optional parameters
+    if "base_url" in querystring:
+        options["base_url"] = querystring["base_url"][0]
+    if "file_permissions_mode" in querystring:
+        options["file_permissions_mode"] = int(querystring["file_permissions_mode"][0], 8)
+    if "directory_permissions_mode" in querystring:
+        options["directory_permissions_mode"] = int(querystring["directory_permissions_mode"][0], 8)
+        
     return {
         "BACKEND": "django.core.files.storage.FileSystemStorage",
-        "OPTIONS": {
-            "location": "".join((parsed_url.netloc, parsed_url.path)),
-        },
+        "OPTIONS": options,
     }
 
 
@@ -44,7 +55,14 @@ def s3_storage(url):
 
 def unknown_storage(url):
     scheme, _ = url.split("://")
-    return {"BACKEND": scheme, "OPTIONS": {}}
+    parsed_url = urlparse(url)
+    querystring = parse_qs(parsed_url.query)
+    
+    options = {}
+    for key, values in querystring.items():
+        options[key] = values[0]
+        
+    return {"BACKEND": scheme, "OPTIONS": options}
 
 
 SCHEME_TO_CONFIG = {
