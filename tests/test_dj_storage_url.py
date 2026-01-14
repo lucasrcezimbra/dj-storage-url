@@ -6,7 +6,7 @@ from dj_storage_url import parse
 class TestInMemoryStorage:
     def test_parse(self):
         assert parse("memory://") == {
-            "BACKEND": "django.core.files.storage.MemoryStorage",
+            "BACKEND": "django.core.files.storage.InMemoryStorage",
             "OPTIONS": {},
         }
 
