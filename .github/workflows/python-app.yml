@@ -8,7 +8,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v5
+      - uses: actions/checkout@v6
       - run: pipx install poetry
       - uses: actions/setup-python@v6
         with:
@@ -17,7 +17,7 @@ jobs:
       - run: make install
       - run: make lint
       - run: make test-cov
-      - uses: codecov/codecov-action@v5.5.1
+      - uses: codecov/codecov-action@v5.5.2
         with:
           token: ${{ secrets.CODECOV_TOKEN }}
           slug: lucasrcezimbra/dj-storage-url
