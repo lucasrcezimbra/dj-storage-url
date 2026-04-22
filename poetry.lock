@@ -29,14 +29,14 @@ dev = ["freezegun (>=1.0,<2.0)", "pytest (>=6.0)", "pytest-cov"]
 
 [[package]]
 name = "build"
-version = "1.4.0"
+version = "1.4.4"
 description = "A simple, correct Python build frontend"
 optional = false
 python-versions = ">=3.9"
 groups = ["dev"]
 files = [
-    {file = "build-1.4.0-py3-none-any.whl", hash = "sha256:6a07c1b8eb6f2b311b96fcbdbce5dab5fe637ffda0fd83c9cac622e927501596"},
-    {file = "build-1.4.0.tar.gz", hash = "sha256:f1b91b925aa322be454f8330c6fb48b465da993d1e7e7e6fa35027ec49f3c936"},
+    {file = "build-1.4.4-py3-none-any.whl", hash = "sha256:8c3f48a6090b39edec1a273d2d57949aaf13723b01e02f9d518396887519f64d"},
+    {file = "build-1.4.4.tar.gz", hash = "sha256:f832ae053061f3fb524af812dc94b8b84bac6880cd587630e3b5d91a6a9c1703"},
 ]
 
 [package.dependencies]
@@ -47,6 +47,7 @@ pyproject_hooks = "*"
 tomli = {version = ">=1.1.0", markers = "python_version < \"3.11\""}
 
 [package.extras]
+keyring = ["keyring"]
 uv = ["uv (>=0.1.18)"]
 virtualenv = ["virtualenv (>=20.11) ; python_version < \"3.10\"", "virtualenv (>=20.17) ; python_version >= \"3.10\" and python_version < \"3.14\"", "virtualenv (>=20.31) ; python_version >= \"3.14\""]
 
@@ -1185,4 +1186,4 @@ type = ["pytest-mypy"]
 [metadata]
 lock-version = "2.1"
 python-versions = ">=3.9"
-content-hash = "8115d150812c15a4804f7665c0ec5e55d9da523cb0fda8a1ef90679fdcdbe998"
+content-hash = "21c44196b8494372ec1b2c89f51e640514ca891bb38d01accbca28b917ac0178"
